@@ -7,6 +7,8 @@ GSAP (GreenSock Animation Platform) is a powerful JavaScript library for creatin
 
 Official website: https://gsap.com
 
+
+
 📚 Topics Covered
 ✅ Introduction to GSAP
 ✅ Tween Basics (gsap.to(), gsap.from(), gsap.fromTo())
