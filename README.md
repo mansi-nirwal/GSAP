@@ -1,7 +1,6 @@
 
 
 
-
 GSAP Learning Repository
 
 Welcome to my GSAP (GreenSock Animation Platform) learning journey! This repository contains all the code, notes, and examples I’ve created while learning how to build high-performance animations using GSAP.
