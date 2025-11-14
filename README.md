@@ -1,69 +1,117 @@
+## Chaintech Assignment — React User Management App
+
+A clean, fast React app built with Vite that lets users register, log in, and manage basic account details. It uses localStorage for simple persistence and Bootstrap 5 for styling.
+
+### Features
+- **Register**: Create a new account
+- **Log in**: Authenticate with saved credentials
+- **Account management**: View and edit basic profile details
+- **Client-side persistence**: Data saved in `localStorage`
+- **Modern stack**: React 19, React Router v7, Vite 7, Bootstrap 5
+
+---
+
+## Getting Started
+
+### Prerequisites
+- **Node.js** 18+ (LTS recommended)
+- **npm** 9+ (comes with Node)
+
+### Install
+```bash
+git clone <your-repo-url>
+cd Chaintech-Assignment
+npm install
+```
+
+### Run
+```bash
+npm run dev
+```
+This starts Vite’s dev server. Open the URL it prints (usually `http://localhost:5173`).
 
 
-GSAP Learning Repository
+Defined in `package.json`:
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  }
+}
+```
 
-Welcome to my GSAP (GreenSock Animation Platform) learning journey! This repository contains all the code, notes, and examples I’ve created while learning how to build high-performance animations using GSAP.
+---
 
-📌 What is GSAP?
-GSAP (GreenSock Animation Platform) is a powerful JavaScript library for creating stunning, performant animations for the web. It works seamlessly with HTML, CSS, SVG, Canvas, and more.
+## Tech Stack
+- **React** 19
+- **React Router DOM** 7
+- **Vite** 7
+- **Bootstrap** 5
+- **ESLint** 9
 
-Official website: https://gsap.com
-📚 Topics Covered
-✅ Introduction to GSAP
-✅ Tween Basics (gsap.to(), gsap.from(), gsap.fromTo())
-✅ Timelines (gsap.timeline())
-✅ Staggered Animations
-✅ Easing Functions
-✅ ScrollTrigger Plugin
-✅ Text & SVG Animations
-✅ Responsive Animations
-✅ Advanced Animation Techniques
-✅ Performance Optimization
+---
 
-🛠️ Getting Started
-📦 Installation
-Option 1: CDN
-html
-Copy code
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-Option 2: NPM
-bash
-Copy code
-npm install gsap
-Then in your JS file:
+## Project Structure
+```text
+.
+├─ public/
+├─ src/
+│  ├─ assets/
+│  ├─ components/
+│  │  ├─ Account.jsx
+│  │  ├─ Login.jsx
+│  │  └─ Register.jsx
+│  ├─ App.css
+│  ├─ App.jsx
+│  ├─ index.css
+│  └─ main.jsx
+├─ index.html
+├─ package.json
+├─ vite.config.js
+└─ README.md
+```
 
-js
-Copy code
-import gsap from "gsap";
-✨ Basic Example
-html
-Copy code
-<div class="box"></div>
+---
 
-<script>
-  gsap.to(".box", {
-    x: 300,
-    duration: 2,
-    rotation: 360,
-    ease: "power2.inOut"
-  });
-</script>
-📂 Folder Structure
-bash
-Copy code
-gsap-learning/
-├── 01-intro/
-├── 02-tweens/
-├── 03-timelines/
-├── 04-stagger/
-├── 05-scrolltrigger/
-├── 06-svg-animation/
-├── 07-projects/
-└── README.md
-Each folder contains:
+## Usage
 
-index.html – the example page
+### Routes
+- **/** or **/login**: Login page
+- **/register**: Registration page
+- **/account**: Account/profile page (after login)
 
-style.css – basic styles
+### Credentials & Persistence
+- User data and auth state are stored in `localStorage` for demo purposes. Clear browser storage to reset.
 
-main.js – GSAP animation scripts
+---
+
+## Styling
+- **Bootstrap 5** is used for layout and components.
+- Add custom styles in `src/App.css` or `src/index.css`.
+
+---
+
+## Accessibility and UX Notes
+- Keyboard-accessible forms and buttons
+- Descriptive labels and placeholders
+- Basic client-side validation
+
+---
+
+## Troubleshooting
+- If the dev server doesn’t open:
+  - Ensure Node 18+ is installed
+  - Remove `node_modules` and lockfile, then reinstall:
+    ```bash
+    rm -rf node_modules package-lock.json
+    npm install
+    npm run dev
+    ```
+- If styles don’t load, confirm Bootstrap is properly imported.
+
+
+
+
